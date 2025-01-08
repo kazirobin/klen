@@ -1,33 +1,78 @@
-*{
-    color: #485466 !important;
+* {
+  color: #485466 !important;
 }
+.text-blue *,
+.text-blue {
+  color: #4e92f9 !important;
+}
+/* header section  */
 .gradient-text-btn {
-    background: linear-gradient(to right, #C381DB, #4E92F9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    border: 2px solid transparent;
-    padding: 0.5rem 1.5rem;
-    transition: all 0.3s ease-in-out;
+  background: linear-gradient(to right, #c381db, #4e92f9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.gradient-text-btn:hover {
-      box-shadow: 0 4px 8px #3145FF21;
-    background: linear-gradient(to right, #C381DB, #4E92F9);
-    border-color: #feb47b;
-    -webkit-text-fill-color: #fff;
-    color: #fff;
+.gradient-text-btn:hover,
+.banner-btn {
+  box-shadow: 0 4px 8px #3145ff21;
+  background: linear-gradient(to right, #c381db, #4e92f9);
+  border-color: #feb47b;
+  -webkit-text-fill-color: #fff;
+  color: #fff;
+}
+.banner-btn:hover {
+  color: #485466 !important;
+}
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left {
+  margin-top: 227px;
+  margin-bottom: 89px;
+}
+@media (max-width: 992px) {
+  #navLinks2,
+  #navLinks {
+    display: none !important;
   }
-  @media (max-width:992px) {
-    
-      #navLinks2, 
-      #navLinks {
-        display: none !important;
-      }
-    
-      #navLinks2.show, 
-      #navLinks.show {
-        display: flex !important;
-      }
+
+  #navLinks2.show,
+  #navLinks.show {
+    display: flex !important;
   }
+}
+/* client section */
+.gradient-text {
+  background: linear-gradient(to right, #c381db, #4e92f9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.lh {
+  line-height: 10px;
+}
+.service-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 24%;
+}
+
+.service {
+  background: rgba(255, 255, 255, 0.2); /* White with opacity */
+  backdrop-filter: blur(40px); /* Adds the blur effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Default subtle shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow change */
+}
+
+.service:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Larger and darker shadow on hover */
+}
