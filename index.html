@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+    />
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+    />
+    <!-- external css link  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-black">
+    <!-- header section  -->
+    <section class="bg-white">
+      <div class="container">
+        <!-- navbar  -->
+        <nav class="d-flex flex-column flex-lg-row justify-content-between">
+          <div
+            class="logo mt-1 d-flex align-items-center justify-content-between"
+          >
+            <img src="./img/Logo.png" alt="" />
+
+            <div
+              role="button"
+              id="hamburgerMenu"
+              class="hamburger text-primary d-lg-none"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <ul
+            id="navLinks"
+            class="d-flex flex-column flex-lg-row gap-4 justify-content-center align-items-center mt-2 me-lg-auto"
+          >
+            <li class="list-group-item mt-2">
+              <a href="#" class="fw-bold text-decoration-none"
+                >Home<i class="fa-solid fa-chevron-down ps-3"></i
+              ></a>
+            </li>
+            <li class="list-group-item mt-2">
+              <a href="#" class="fw-bold text-decoration-none"
+                >Service<i class="fa-solid fa-chevron-down ps-3"></i
+              ></a>
+            </li>
+            <li class="list-group-item mt-2">
+              <a href="#" class="fw-bold text-decoration-none"
+                >Works<i class="fa-solid fa-chevron-down ps-3"></i
+              ></a>
+            </li>
+            <li class="list-group-item mt-2">
+              <a href="#" class="fw-bold text-decoration-none"
+                >News<i class="fa-solid fa-chevron-down ps-3"></i
+              ></a>
+            </li>
+            <li class="list-group-item mt-2">
+              <a href="#" class="fw-bold text-decoration-none"
+                >Contact<i class="fa-solid fa-chevron-down ps-3"></i
+              ></a>
+            </li>
+          </ul>
+          <div
+            id="navLinks2"
+            class="d-flex align-items-center justify-content-center my-4 mr-auto"
+          >
+            <button type="button" class="btn btn-light gradient-text-btn">
+              Log In
+            </button>
+            <button type="button" class="btn btn-light gradient-text-btn">
+              Sign Up
+            </button>
+          </div>
+        </nav>
+        <div class="banner" style="background-image: url('./img/Banner.png');">
+            <div class="left">
+                
+            </div>
+            <div class="right"></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const hamburgerMenu = document.getElementById("hamburgerMenu");
+      const navLinks = document.getElementById("navLinks");
+      const navLinks2 = document.getElementById("navLinks2");
+
+      hamburgerMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        navLinks2.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
